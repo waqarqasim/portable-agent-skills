@@ -1,0 +1,14 @@
+{
+  "name": "portable-agent-skills",
+  "version": "1.0.0",
+  "description": "Agent Skills that work across Claude Code, Cursor, Copilot, Codex and Gemini CLI, with an installer that puts them where each tool actually looks.",
+  "type": "module",
+  "bin": { "portable-skills": "bin/skills.mjs" },
+  "files": ["bin", "lint", "skills"],
+  "scripts": {
+    "lint": "node lint/lint-skills.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "license": "MIT",
+  "engines": { "node": ">=20" }
+}
