@@ -7,10 +7,14 @@ Copilot, Codex, Gemini CLI and ~40 other clients — plus an installer that puts
 each tool actually looks.
 
 ```bash
-npx portable-agent-skills add qa-test-plan
-npx portable-agent-skills add --all
-npx portable-agent-skills check      # CI: fails if an installed copy drifted from source
+npx -y github:waqarqasim/portable-agent-skills add qa-test-plan
+npx -y github:waqarqasim/portable-agent-skills add --all
+npx -y github:waqarqasim/portable-agent-skills check   # fails if an installed copy drifted
 ```
+
+Not on npm, so the invocation is the `github:` form — verified working rather than assumed.
+Or clone and run `node bin/skills.mjs` directly; or just copy a `skills/<name>/` folder into
+your project by hand, since each one is self-contained.
 
 ---
 
