@@ -82,7 +82,7 @@ passing reports identically to every skill passing.
 
 ## Verified, not asserted
 
-26 tests, run with Node's built-in runner, no dependencies. The rules that carry the design
+26 tests, run with Node's built-in runner, no dependencies, on Linux, Windows and macOS. The rules that carry the design
 were mutation-checked rather than trusted:
 
 | mutation | result |
